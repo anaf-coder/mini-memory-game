@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chesse</title>
+    <style>
+        .white {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+        .black {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        #bord {
+            display: grid;
+            grid-template: repeat(8, 100px) / repeat(8, 100px);
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+        #text {
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            justify-content: center;
+            text-align: center;
+        }
+        #time {
+            margin-bottom: 0px;
+        }
+        #score {
+            margin-top: 0px;
+        }
+        #btn {
+            padding: 15px;
+            font-size: 50px;
+            font-weight: bold;
+            margin-top: 25px;
+            border-radius: 15px;
+            background-color: tomato;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">
+        <h1 id="time">00:00</h1>
+        <h1 id="txt">Score: <span id="score">0</span>/15</h1>
+    </div>
+    <div id="bord">
+        <div class="white w1"></div>
+        <div class="black"></div>
+        <div class="white w2"></div>
+        <div class="black"></div>
+        <div class="white w3"></div>
+        <div class="black"></div>
+        <div class="white w4"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white w5"></div>
+        <div class="black"></div>
+        <div class="white w6"></div>
+        <div class="black"></div>
+        <div class="white w7"></div>
+        <div class="black"></div>
+        <div class="white w8"></div>
+
+        <div class="white w9"></div>
+        <div class="black"></div>
+        <div class="white w10"></div>
+        <div class="black"></div>
+        <div class="white w11"></div>
+        <div class="black"></div>
+        <div class="white w12"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white w13"></div>
+        <div class="black"></div>
+        <div class="white w14"></div>
+        <div class="black"></div>
+        <div class="white w15"></div>
+        <div class="black"></div>
+        <div class="white w16"></div>
+
+        <div class="white w17"></div>
+        <div class="black"></div>
+        <div class="white w18"></div>
+        <div class="black"></div>
+        <div class="white w19"></div>
+        <div class="black"></div>
+        <div class="white w20"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white w21"></div>
+        <div class="black"></div>
+        <div class="white w22"></div>
+        <div class="black"></div>
+        <div class="white w23"></div>
+        <div class="black"></div>
+        <div class="white w24"></div>
+
+        <div class="white w25"></div>
+        <div class="black"></div>
+        <div class="white w26"></div>
+        <div class="black"></div>
+        <div class="white w27"></div>
+        <div class="black"></div>
+        <div class="white w28"></div>
+        <div class="black"></div>
+
+        <div class="black"></div>
+        <div class="white w29"></div>
+        <div class="black"></div>
+        <div class="white w30"></div>
+        <div class="black"></div>
+        <div class="white w31"></div>
+        <div class="black"></div>
+        <div class="white w32"></div>
+        
+    </div>
+
+    <button id="btn" onclick="location.reload()">Play again</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.min.js"></script>
+</html>
