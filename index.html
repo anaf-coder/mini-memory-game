@@ -49,6 +49,22 @@
             color: black;
             border: none;
         }
+         @media (max-width:768px) {
+            .white {
+                width: 50px;
+                height: 50px;
+                background-color: chocolate;
+            }
+            .black {
+                width: 50px;
+                height: 50px;
+                background-color: black;
+            }
+            #bord {
+                display: grid;
+                grid-template: repeat(8, 50px) / repeat(8, 50px);
+            }
+        }
     </style>
 </head>
 <body>
